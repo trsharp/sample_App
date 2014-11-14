@@ -4,6 +4,9 @@ SampleApp::Application.routes.draw do
   get "static_pages/help"
   get "statc_pages/home"
   get "statc_pages/help"
+   get 'script/index' => 'script#index'
+  get 'landing/index' => 'landing#index'
+  root 'script#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
